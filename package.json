@@ -1,0 +1,21 @@
+{
+  "name": "autSequenciaNFSe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg ."
+  },
+  "dependencies": {
+    "puppeteer": "^19.0.0"
+  },
+  "pkg": {
+    "targets": [
+      "node16-win-x64"
+    ],
+    "assets": [
+      "node_modules/puppeteer/.local-chromium/**/*"
+    ]
+  }
+}
